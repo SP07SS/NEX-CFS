@@ -1,0 +1,3 @@
+[submodule "NEX-CFS"]
+	path = NEX-CFS
+	url = https://github.com/SP07SS/NEX-CFS.git
