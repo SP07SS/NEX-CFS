@@ -1,0 +1,89 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 220 30% 7%; /* Very dark desaturated blue #0F131C */
+    --foreground: 210 40% 98%; /* Almost white #F9FAFB */
+
+    --card: 220 30% 12%; /* Slightly lighter dark #171D2B */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 30% 10%; /* Darker popover background */
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%; /* Bright blue #3B82F6 */
+    --primary-foreground: 210 40% 98%; /* White text on primary */
+
+    --secondary: 215 28% 17%; /* Darker muted blue/gray #202A3A */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 215 28% 15%; /* Very subtle dark elements #1D2533 */
+    --muted-foreground: 215 20% 65%; /* Grayish text #8E9AA9 */
+
+    --accent: 217 91% 60%; /* Bright blue (same as primary) */
+    --accent-foreground: 210 40% 98%; /* White text on accent */
+
+    --destructive: 0 72% 51%; /* Red #E53E3E */
+    --destructive-foreground: 0 0% 98%; /* White text on destructive */
+
+    --border: 215 28% 20%; /* Subtle borders #2A3647 */
+    --input: 215 28% 17%; /* Input background #202A3A */
+    --ring: 217 91% 70%; /* Focus rings, lighter blue */
+
+    --chart-1: 217 91% 60%; /* Blue */
+    --chart-2: 160 70% 45%; /* Teal/Green */
+    --chart-3: 30 80% 60%;  /* Orange */
+    --chart-4: 280 70% 65%; /* Purple */
+    --chart-5: 340 85% 70%; /* Pink/Red */
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors, adjusted for dark theme */
+    --sidebar-background: 220 30% 10%; /* Slightly lighter than main bg */
+    --sidebar-foreground: 210 40% 95%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 215 28% 20%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 215 28% 22%;
+    --sidebar-ring: 217 91% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-foreground; /* Ensure headings use foreground color */
+  }
+  h1 { @apply text-4xl; }
+  h2 { @apply text-3xl; }
+  h3 { @apply text-2xl; }
+  h4 { @apply text-xl; }
+  h5 { @apply text-lg; }
+  h6 { @apply text-base; }
+}
+
+/* Marquee Animation */
+@keyframes marquee-rtl {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.3333%); /* Scroll one full set of items if duplicated 3 times */
+  }
+}
+
+.animate-marquee-rtl {
+  animation: marquee-rtl 60s linear infinite; /* Adjust duration for speed */
+}

@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/faq/page": "app/faq/page.js",
+  "/legal-qa/page": "app/legal-qa/page.js",
+  "/page": "app/page.js",
+  "/services/affiliate/page": "app/services/affiliate/page.js",
+  "/services/crowdfunding/page": "app/services/crowdfunding/page.js",
+  "/services/ideas-to-empire/page": "app/services/ideas-to-empire/page.js",
+  "/services/loans/page": "app/services/loans/page.js",
+  "/services/page": "app/services/page.js",
+  "/services/trading/page": "app/services/trading/page.js"
+}

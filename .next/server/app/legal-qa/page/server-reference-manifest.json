@@ -1,0 +1,16 @@
+{
+  "node": {
+    "40e0fae1ecee0fd7c147b6f84f5b0f20de31304301": {
+      "workers": {
+        "app/legal-qa/page": {
+          "moduleId": "[project]/.next-internal/server/app/legal-qa/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/ai/flows/legal-qa-flow.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/legal-qa/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}
